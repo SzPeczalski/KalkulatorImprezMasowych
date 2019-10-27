@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------------------------------------
+                                      LOG -  KALKULATOR IMPREZ MASOWYCH                                       
+--------------------------------------------------------------------------------------------------------------
+Wybrano imprezę masową niepodwyższonego ryzyka
+Wprowadzono następującą liczbę uczestników imprezy masowej: 25000 os.
+Liczba osób niezbędnych do zabezpieczenia imprezy masowej wynosi: 257 os.
+Liczba służb porządkowych: 52 os.
+Liczba służb informacyjnych: 205 os.
+
+--------------------------------------------------------------------------------------------------------------
+                Kalkulator Imprez Masowych by Szymon Pęczalski ©2019 27-10-2019r. godz. 19:04:28
+--------------------------------------------------------------------------------------------------------------

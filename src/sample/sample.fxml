@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import sample.TextFieldNumberValidate?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="115.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Podaj liczbę uczestników imprezy masowej:" />
+                <TextFieldNumberValidate fx:id="liczba_uczestnikow" layoutX="299.0" layoutY="10.0" onDragEntered="#checkAll" />
+                <Label layoutX="14.0" layoutY="50.0" text="Wybierz charakter imprezy masowej:" />
+                <RadioButton fx:id="rb1" layoutX="228.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#checkAll" text="Niepodwyższonego ryzyka">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="group" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="rb2" layoutX="405.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#checkAll" text="Podwyższonego ryzyka" toggleGroup="$group" />
+                <Button fx:id="oblicz" disable="true" layoutX="477.0" layoutY="77.0" mnemonicParsing="false" onAction="#klikOblicz" text="Oblicz" />
+                <Button fx:id="reset" layoutX="532.0" layoutY="77.0" mnemonicParsing="false" onMouseClicked="#resetApp" text="Reset" />
+            <Button fx:id="save" disable="true" layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onMouseClicked="#saveToFile" text="Zapisz do pliku" />
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="600.0">
+            <children>
+                <TextArea fx:id="result" editable="false" layoutY="-3.0" prefHeight="265.0" prefWidth="600.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="20.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="4.0" layoutY="3.0" text="Autor: Szymon Pęczalski v.1.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
